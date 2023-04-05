@@ -1,31 +1,29 @@
 import react from 'react';
-import Intro from './components/Intro';
-import Portfolio from './components/Portfolio';
-import Music from './components/Music';
-import Timeline from './components/Timeline';
-import Footer from './components/Footer';
-import Contact from './components/Contact';
-import './styles/tailwind.css'
-import { Canvas } from "@react-three/fiber"
-import Cylinder3d from './components/three';
+import { BrowserRouter } from 'react-router-dom';
+import { About, Contact, Experience, Feedbacks, Navbar,Hero, Tech, Works, StarsCanvas } from './components';
+
+import './styles/index.css'
 
 
-function App() {
-
+const App = () => {
   return (
-    <div className="App">
-      <Intro />
-			<Canvas>
-				{/* <pointLight position={[10, 10, 10]} /> */}
-				{/* <ambientLight /> */}
-				<Cylinder3d position={[-1.2, 0, 0]} />
-				<Cylinder3d position={[1.2, 0, 0]} />
-			</Canvas>
-      <Portfolio />
-      <Timeline />
-      
-      
-    </div>
+		<BrowserRouter>
+			<div className="relative z-0 bg-primary">
+				<div className = "bg-hero-pattern bg-cover bg-no-repeat bg-center">
+					<Navbar />
+					<Hero />
+				</div>
+				{/* <About /> */}
+				<Experience />
+				<Tech />
+				<Works />
+				<Feedbacks />
+				<div className="relative z-0">
+					<Contact />
+					<StarsCanvas />
+				</div>
+			</div>
+		</BrowserRouter>
   )
 }
 
