@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
+import Type from './Type';
 
 
 const Hero = () => {
@@ -15,12 +16,10 @@ const Hero = () => {
 				<div>
 					<h1 className={`${styles.heroHeadText} text-white`}> Hi, I'm <span className="text-[#915eff]">Ellie
 					</span></h1>
-					<p className={`${styles.heroSubText} mt-2 text-white-100`}>					
-					I'm an IT Systems Administrator and <br
-					className="sm:block hidden" />
-					Software Developer with 10 years<br
-					className="sm:block hidden" /> of experience in the industry.
+					<p className={`${styles.heroSubText} mt-2 text-[#915eff]`} >
+					<Type />					
 					</p>
+
 				</div>				
 			</div>
 			<ComputersCanvas />
