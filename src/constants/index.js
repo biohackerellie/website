@@ -8,20 +8,20 @@ import {
   html,
   css,
   reactjs,
-  redux,
+  bash,
   tailwind,
   nodejs,
-  mongodb,
+  ableton,
   git,
-  figma,
+  ruby,
   docker,
   bb,
   cpr,
   laurel,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  docs,
+  rds,
+  app4,
+  python,
 } from "../assets";
 
 export const navLinks = [
@@ -80,8 +80,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Bash",
+    icon: bash,
   },
   {
     name: "Tailwind CSS",
@@ -92,20 +92,20 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Ableton",
+    icon: ableton,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Python",
+    icon: python,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Ruby",
+    icon: ruby,
   },
   {
     name: "docker",
@@ -195,67 +195,67 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Documentation Sites",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "I've made several different documentation sites using JS and the Docusaurus framework. Examples include my personal documentation as well as a site for Laurel Public Schools",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Docusaurus",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Docker",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: docs,
+    source_code_link: "https://github.com/Laurel-Public-Schools/links",
+  },
+  {
+    name: "Windows RDS with Guacamole",
+    description:
+      "I designed a custom Windows RDS solution for students to use on their chromebooks with Apache Guacamole as a custom gateway and load-balancer",
+    tags: [
+      {
+        name: "Docker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Windows RDS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Azure",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Ubuntu",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "SQL",
+        color: "purple-text-gradient",
+      },
+    ],
+    image: rds,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "AD Tools",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A Windows desktop app written in Powershell to give quick access to most used Active Directory functions such as password resets and Security Group assignments",
     tags: [
       {
-        name: "react",
+        name: "powershell",
         color: "blue-text-gradient",
       },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: app4,
+    source_code_link: "https://github.com/biohackerellie/AppDev/tree/main/Powershell/ADUserGroups",
   },
 ];
 
