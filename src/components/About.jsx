@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
+import { SectionWrapper } from '../hoc';
 
 
 const ServiceCard = ({index, title, icon }) => {
@@ -47,10 +48,9 @@ const About = () => {
 				variants={fadeIn("", "", 0.1, 1)}
 				className= "mt-4 ml-1 text-secondary text-[17px] max-w-3xl leading-[30px]"
 			>
-				I've spent the last decade of my career working in the tech industry from hardware repair to software development and network administration.
-				When I'm not working on new code or firing up new docker containers in my home lab, I'm usually busy with my passions in music production and playing video games! Basically you can call me a nerd 🤷‍♀️
-				I have a combined 10 years experience working with Powershell, Linux, Windows Server, Ableton Live, Docker, and more!
-				I'm passionate about tech and that passion has lead to a shift from administration to development, where I get to use my love for technology as a creative outlet.
+			I'm a System Administrator with ten years of experience working in IT related fields. Expertise in deploying and maintaining
+			Ubiquiti and Cisco networks along with Windows, Linux, and Azure Cloud Server administration, as well as web development 
+			with Javascript, React, and Python. Passionate about constantly pursuing knowledge in IT-related fields and offering freelance networking to family and friends
 			</motion.p>
 			<div className="mt-20 flex flex-wrap gap-10">
 				{services.map((service, index) => (
@@ -63,4 +63,4 @@ const About = () => {
   )
 }
 
-export default About
+export default SectionWrapper (About, "about")

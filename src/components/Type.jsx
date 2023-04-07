@@ -4,23 +4,21 @@ import { styles } from "../styles";
 
 function Type() {
   return (
-    <Typewriter  
-      options={{
-        strings: [
-          "Systems Administrator",
-          "Audio Engineer",
-          "Front End Developer",
-          "Artist",
-          "Musician",
-          "Nerd"
-        ],
-				skipAddStyles: true,
-        autoStart: true,
-        loop: true,
-        deleteSpeed: 20,
-      }}
-    />
+  <Typewriter
+    options={{
+      delay: 75
+    }}
+    onInit={(typewriter) => {
+      typewriter.typeString('Systems Administrator, <br /> Audio Engineer, <br /> Front End Developer, <br /> Artist, <br /> Musician, <br /> Nerd. <br />')
+
+        .pauseFor(2500)
+      typewriter.typeString('<br/>Scroll down for more info.')
+        .start();
+    }}
+  />
   );
 }
 
 export default Type;
+
+"Systems Administrator, <br /> Audio Engineer, <br /> Front End Developer, <br /> Artist, <br /> Musician <br /> Nerd"
