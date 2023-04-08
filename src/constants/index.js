@@ -197,7 +197,7 @@ const projects = [
   {
     name: "Documentation Sites",
     description:
-      "I've made several different documentation sites using JS and the Docusaurus framework. Examples include my personal documentation as well as a site for Laurel Public Schools",
+      "I've made several different documentation sites using React. Examples include my personal documentation as well as a site for Laurel Public Schools",
     tags: [
       {
         name: "React",
@@ -216,7 +216,7 @@ const projects = [
     source_code_link: "https://github.com/Laurel-Public-Schools/links",
   },
   {
-    name: "Windows RDS with Guacamole",
+    name: "Windows RDS",
     description:
       "I designed a custom Windows RDS solution for students to use on their chromebooks with Apache Guacamole as a custom gateway and load-balancer",
     tags: [
@@ -231,11 +231,7 @@ const projects = [
       {
         name: "Azure",
         color: "pink-text-gradient",
-      },
-      {
-        name: "Ubuntu",
-        color: "orange-text-gradient",
-      },
+      },     
       {
         name: "SQL",
         color: "purple-text-gradient",
