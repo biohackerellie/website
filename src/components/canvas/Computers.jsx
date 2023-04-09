@@ -2,6 +2,7 @@ import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF, Loader } from "@react-three/drei";
 
+import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
@@ -55,7 +56,7 @@ const ComputersCanvas = () => {
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
-      
+      <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
 					autoRotate
 					autoRotateSpeed={.5}
@@ -64,7 +65,7 @@ const ComputersCanvas = () => {
           minPolarAngle={Math.PI / 2}
         />
         <Computers isMobile={isMobile} />
-     
+      </Suspense>
 
       <Preload all />
     </Canvas> 
