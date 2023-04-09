@@ -25,7 +25,7 @@ if ! git diff --quiet HEAD @{u}; then
     # Deletes old container
     docker system prune -f && \
     # Restart container with new image
-    docker run --rm --name $CONTAINER_NAME -p 3030:3000 -d $IMAGE_NAME:latest
+    docker run --rm --name $CONTAINER_NAME -p 4173:4173 -d $IMAGE_NAME:latest
 
 else
     echo "No changes. Exiting."

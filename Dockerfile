@@ -1,18 +1,12 @@
-#Build step
-FROM node:latest AS build
-ENV NODE_ENV=production
-ENV NPM_CONFIG_LOGLEVEL=error
+FROM node:18-alpine3.17 as build
 WORKDIR /app
-COPY package*.json ./
-RUN npm install --force
-COPY . . 
-RUN npm run build 
+COPY . /app
+RUN npm install
+RUN npm run build
 
-#Deploy step
-FROM busybox:latest as deploy
-WORKDIR /app
-COPY --from=dist /app/dist/ ./
-
-EXPOSE 3000
-
-CMD ["busybox", "httpd", "-f", "-v", "-p", "3000"]
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install nginx -y
+COPY --from=build /app/dist /var/www/html/
+EXPOSE 4173
+CMD ["nginx","-g","daemon off;"]
