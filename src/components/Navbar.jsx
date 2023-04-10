@@ -44,6 +44,8 @@ const Navbar = () => {
 								<a href={`#${link.id}`}>{link.title}</a>
 							</li>
 						))}
+						<a className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer" target="_blank" href="https://docs.epklabs.com">Docs</a>
+						<a className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer" target="_blank" href="https://links.epklabs.com">Links</a>
 					</ul>
 					<div className="sm:hidden flex flex-1 justify-end items-center">
 						<img
@@ -70,6 +72,8 @@ const Navbar = () => {
 									<a href={`#${link.id}`}>{link.title}</a>
 								</li>
 							))}
+							<a className="text-secondary hover:text-white text-[16px] font-poppins font-medium cursor-pointer" target="_blank" href="https://docs.epklabs.com">Docs</a>
+							<a className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer" target="_blank" href="https://links.epklabs.com">Links</a>
 						</ul>
 						</div>
 					</div>
