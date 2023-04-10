@@ -1,4 +1,2 @@
-# Portfolio v2 WIP
-## Currently in dev
-
-Original site was built from a template in CRA. Swapping to Vite and Tailwind CSS, starting from scratch. 
+# Portfolio v2 
+## Created with Vite, React Three Fiber, and Tailwind CSS 
