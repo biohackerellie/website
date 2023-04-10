@@ -1,16 +1,22 @@
 import react from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { About, Contact, Experience, Navbar,Hero, Tech, Works, StarsCanvas } from './components';
-import { Loader } from '@react-three/drei'
+import { About, Contact, Experience, Navbar,Hero, Tech, Works, StarsCanvas, } from './components';
+import { Loader, Preload } from '@react-three/drei';
+import { motion } from 'framer-motion'
 import './styles/index.css'
 
 
 const App = () => {
   return (
+		
 		<BrowserRouter>
-		<Loader />
-			<div className="relative z-0 bg-primary">
-				<div className = "bg-hero-pattern bg-cover bg-no-repeat bg-center">
+
+			<motion.div 
+				className="relative z-0 bg-primary"
+				animate={{ opacity: 1 }}
+				transition={{ from: 0, duration: 1 }}
+				>
+				<div className = "bg-hero-pattern  bg-cover bg-no-repeat bg-center">
 					<Navbar />
 					<Hero />
 					
@@ -23,7 +29,8 @@ const App = () => {
 					<Contact />
 					<StarsCanvas />
 				</div>
-			</div>
+			</motion.div>
+			
 		</BrowserRouter>
   )
 }

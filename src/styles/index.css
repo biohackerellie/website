@@ -13,7 +13,15 @@
   scroll-behavior: smooth;
   color-scheme: dark;
 }
-
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+.bg-hero-pattern {
+  background-image: url('/src/assets/herobg.png') pulse 10s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  
+}
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;

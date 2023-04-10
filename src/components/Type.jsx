@@ -13,8 +13,10 @@ function Type() {
           "Musician",
           "Nerd"
         ],
+        
         delay: 50,
         autoStart: true,
+        
         loop: true,
         deleteSpeed: 50,
       }}
