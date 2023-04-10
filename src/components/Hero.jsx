@@ -16,14 +16,14 @@ const Hero = () => {
 				<motion.div
 
 				animate={{ y: 0 }}
-				transition={{ from: 4000, duration: 5 }}
+				transition={{ from: 6000, duration: 6 }}
 				className= "flex flex-col justify-center items-center mt-5">
 					<div className="w-5 h-5 rounded-full bg-[#F5A9B8]" />
 					<div className="w-1 sm:h-80 h-40 pink-gradient" />
 				</motion.div>
 				<motion.div
 					animate={{ x: 0 }}
-					transition={{ from: 3000, duration: 3}}
+					transition={{ from: 3000, duration: 6}}
 				>
 					<h1 className={`${styles.heroHeadText} text-white`}> Hi, I'm <span className="text-[#5BCEFA]">Ellie
 					</span></h1>

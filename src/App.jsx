@@ -14,7 +14,7 @@ const App = () => {
 			<motion.div 
 				className="relative z-0 bg-primary"
 				animate={{ opacity: 1 }}
-				transition={{ from: 0, duration: 1 }}
+				transition={{ from: 0, duration: 5 }}
 				>
 				<div className = "bg-hero-pattern  bg-cover bg-no-repeat bg-center">
 					<Navbar />
@@ -27,7 +27,7 @@ const App = () => {
 				<Works />
 				<div className="relative z-0">
 					<Contact />
-					<StarsCanvas />
+					
 				</div>
 			</motion.div>
 			
