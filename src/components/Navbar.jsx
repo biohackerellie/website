@@ -63,7 +63,7 @@ const Navbar = () => {
 										active === link.title
 											? "text-white"
 											: "text-secondary"
-									} font-poppins font-medium cursor-pointer text-[16px]`}
+									} font-Inter font-medium cursor-pointer text-[16px]`}
 									onClick={() =>{
 										setToggle(!toggle);
 										setActive(link.title);
@@ -72,7 +72,7 @@ const Navbar = () => {
 									<a href={`#${link.id}`}>{link.title}</a>
 								</li>
 							))}
-							<a className="text-secondary hover:text-white text-[16px] font-poppins font-medium cursor-pointer" target="_blank" href="https://docs.epklabs.com">Docs</a>
+							<a className="text-secondary hover:text-white text-[16px] font-Inter font-medium cursor-pointer" target="_blank" href="https://docs.epklabs.com">Docs</a>
 							<a className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer" target="_blank" href="https://links.epklabs.com">Links</a>
 						</ul>
 						</div>

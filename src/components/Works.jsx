@@ -6,6 +6,7 @@ import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
+
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return(
     <motion.div variants={fadeIn("up", "spring", 
@@ -18,7 +19,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div classname="relative w-full h-[230px]">
+        <div className="relative w-full h-[230px]">
           <img
             src={image}
             alt={name}
@@ -58,7 +59,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 const Works = () => {
   return (
     <>
-      <motion.div vartiants={textVariant()}>
+      <motion.div variants={textVariant()}>
       <p className={styles.sectionSubText}>
 					My Works</p>
 				<h2 className={styles.sectionHeadText}>
@@ -66,7 +67,7 @@ const Works = () => {
       </motion.div>
       <div className="w-full flex">
         <motion.p
-          varients={fadeIn("", "", 0.1, 1)}
+          variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           The Following projects showcase my skills and experience 
@@ -83,6 +84,31 @@ const Works = () => {
           />
         ))}
       </div>
+			<motion.div variants={fadeIn("up", "spring", 
+    )} className="flex justify-center py-4">
+			<Tilt
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450
+        }}				
+			>
+			<button
+				className="bg-tertiary hover:bg-black-100 hover:text-secondary py-4 px-10 outline-none w-fit text-white font-bold shadow-md shadow-primary  rounded-xl"
+				onClick={() => {
+					const url = "/Resume.pdf";
+					const link = document.createElement("a");
+					link.href = url;
+					link.download = "resume.pdf"
+					document.body.appendChild(link);
+					link.click();
+					document.body.removeChild(link);
+				}}
+			>
+				Download my Resume
+			</button>
+			</Tilt>
+			</motion.div>
     </>
   )
 }
