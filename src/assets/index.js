@@ -20,7 +20,7 @@ import python from "./tech/python.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import ruby from "./tech/ruby.png";
-
+import terminal from "./terminal.png"
 import bb from "./company/bb.png";
 import cpr from "./company/cpr.png";
 import laurel from "./company/laurel.png";
@@ -58,4 +58,5 @@ export {
   docs,
   rds,
   app4,
+	terminal
 };

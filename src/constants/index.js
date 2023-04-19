@@ -22,6 +22,7 @@ import {
   rds,
   app4,
   python,
+	terminal,
 } from "../assets";
 
 export const navLinks = [
@@ -170,6 +171,27 @@ const experiences = [
 
 
 const projects = [
+	{
+    name: "React-Terminal",
+    description:
+      "Following the inspiration of others on the internet, I created a terminal emulator in React with support for nested commands! This project is still in development, but I plan to add more features and make it more customizable.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Vite",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: terminal,
+    source_code_link: "https://github.com/biohackerellie/react-terminal",
+  },
   {
     name: "Documentation Sites",
     description:
