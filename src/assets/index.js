@@ -28,7 +28,7 @@ import laurel from "./company/laurel.png";
 import docs from "./docs.png";
 import rds from "./rds.png";
 import app4 from "./app4.png";
-
+import Site from "./Site.png";
 export {
 	me,
   bb,
@@ -58,5 +58,6 @@ export {
   docs,
   rds,
   app4,
-	terminal
+	terminal,
+	Site
 };

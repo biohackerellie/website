@@ -74,6 +74,7 @@ const Navbar = () => {
 							))}
 							<a className="text-secondary hover:text-white text-[16px] font-Inter font-medium cursor-pointer" target="_blank" href="https://docs.epklabs.com">Docs</a>
 							<a className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer" target="_blank" href="https://links.epklabs.com">Links</a>
+							<a className=" text-secondary hover:text-white text-[18px] font-inter font-medium cursor-pointer" target="_blank" href="https://music.epklabs.com">Music</a>
 						</ul>
 						</div>
 					</div>

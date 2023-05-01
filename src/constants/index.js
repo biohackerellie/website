@@ -23,6 +23,7 @@ import {
   app4,
   python,
 	terminal,
+	Site
 } from "../assets";
 
 export const navLinks = [
@@ -171,6 +172,27 @@ const experiences = [
 
 
 const projects = [
+	{
+		name: "Full Stack Music App",
+		description:
+		"A full stack music app built entirely with React, Express, and SQLite. As a musician, I wanted a site to keep track of my music and lyrics, so I built one! The app is customizable so any artist can use it to keep track of their music.",
+		tags: [
+			{
+				name: "React",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "Express",
+				color: "green-text-gradient",
+			},
+			{
+				name: "SQLite",
+				color: "pink-text-gradient",
+			},
+		],
+		image: Site,
+		source_code_link: "https://github.com/biohackerellie/music-app",
+	},
 	{
     name: "React-Terminal",
     description:
