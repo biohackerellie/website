@@ -44,11 +44,11 @@ export const navLinks = [
 
 const services = [
 	{
-		title: 'Web Developer',
+		title: 'TypeScript FullStack Developer',
 		icon: web,
 	},
 	{
-		title: 'React Native Developer',
+		title: 'Master of CI/CD',
 		icon: mobile,
 	},
 	{
@@ -160,11 +160,13 @@ const experiences = [
 		iconBg: '#ffffff',
 		date: '2021 - Present',
 		points: [
+			'Developed a full stack facility reservation application for the district using NextJS, React, and Prisma.',
+			'Created a custom Windows RDS solution for students to use on their chromebooks with Apache Guacamole as a custom gateway and load-balancer.',
+			'Developed internal CI/CD pipelines for automating the deployment of web applications and services.',
 			"Lead the redesign of the school district's new website, laurel.k12.mt.us, and educated all end users on the new site management system.",
 			'Spearheaded the modernization of several district systems, such as Jira Cloud for IT and Facility project management, and SchoolSpace, for handling district facility rentals.',
 			'Developed automation scripts with Powershell, Python, and Bash for handling student and staff enrollment, and security badge access, web app development pipelines, and more.',
 			'Managed Windows and Linux based server and network environments across all district buildings.',
-			'Developed several web applications for the District including documentation sites and network monitoring systems.',
 		],
 	},
 ];
