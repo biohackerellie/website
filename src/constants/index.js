@@ -52,7 +52,7 @@ const services = [
 		icon: mobile,
 	},
 	{
-		title: 'Systems Administrator',
+		title: 'Windows Administrator',
 		icon: backend,
 	},
 	{
@@ -118,27 +118,19 @@ const technologies = [
 
 const experiences = [
 	{
-		title: 'Geek Squad Agent, Home Theater Installer',
-		company_name: 'Best Buy',
-		icon: bb,
-		iconBg: '#00385f',
-		date: '2013 - 2016',
+		title: 'IT Systems Administrator',
+		company_name: 'Laurel Public Schools',
+		icon: laurel,
+		iconBg: '#ffffff',
+		date: '2021 - Present',
 		points: [
-			'Provided Customer Service to advanced level issues in store and in home.',
-			'Worked on in store device services such as data transfers and virus removals.',
-			'Installed a wide range of home theater products in customers homes.',
-		],
-	},
-	{
-		title: 'Lead Repair Technician / Store Manager',
-		company_name: 'CPR Cell Phone Repair',
-		icon: cpr,
-		iconBg: '#8f0100',
-		date: '2016 - 2019',
-		points: [
-			'Managed retail and repair employees.',
-			'Performed advanced level repairs that came into our shop. I.E. Game Console repair, micro solder phone motherboard repairs ( iphone IC Chips, USB-C charging ports) and more.',
-			'Maintained inventory on repair parts, device accessories, and used devices.',
+			'Developed a full stack facility reservation application for the district using NextJS, React, and Prisma.',
+			'Developed and Maintained Windows RDS on premises for students to use Windows from their chromebooks.',
+			'Developed internal CI/CD pipelines for automating the deployment of web applications and services.',
+			"Lead the redesign of the school district's new website, laurel.k12.mt.us, and educated all end users on the new site management system.",
+			'Spearheaded the modernization of several district systems, such as Jira Cloud for IT and Facility project management.',
+			'Developed automation scripts with Powershell, Python, and Bash for handling student and staff enrollment, and security badge access, web app development pipelines, and more.',
+			'Managed Windows and Linux based server and network environments across all district buildings.',
 		],
 	},
 	{
@@ -154,28 +146,36 @@ const experiences = [
 		],
 	},
 	{
-		title: 'IT Systems Administrator',
-		company_name: 'Laurel Public Schools',
-		icon: laurel,
-		iconBg: '#ffffff',
-		date: '2021 - Present',
+		title: 'Lead Repair Technician / Store Manager',
+		company_name: 'CPR Cell Phone Repair',
+		icon: cpr,
+		iconBg: '#8f0100',
+		date: '2016 - 2019',
 		points: [
-			'Developed a full stack facility reservation application for the district using NextJS, React, and Prisma.',
-			'Created a custom Windows RDS solution for students to use on their chromebooks with Apache Guacamole as a custom gateway and load-balancer.',
-			'Developed internal CI/CD pipelines for automating the deployment of web applications and services.',
-			"Lead the redesign of the school district's new website, laurel.k12.mt.us, and educated all end users on the new site management system.",
-			'Spearheaded the modernization of several district systems, such as Jira Cloud for IT and Facility project management, and SchoolSpace, for handling district facility rentals.',
-			'Developed automation scripts with Powershell, Python, and Bash for handling student and staff enrollment, and security badge access, web app development pipelines, and more.',
-			'Managed Windows and Linux based server and network environments across all district buildings.',
+			'Managed retail and repair employees.',
+			'Performed advanced level repairs that came into our shop. I.E. Game Console repair, micro solder phone motherboard repairs ( iphone IC Chips, USB-C charging ports) and more.',
+			'Maintained inventory on repair parts, device accessories, and used devices.',
+		],
+	},
+	{
+		title: 'Geek Squad Agent, Home Theater Installer',
+		company_name: 'Best Buy',
+		icon: bb,
+		iconBg: '#00385f',
+		date: '2013 - 2016',
+		points: [
+			'Provided Customer Service to advanced level issues in store and in home.',
+			'Worked on in store device services such as data transfers and virus removals.',
+			'Installed a wide range of home theater products in customers homes.',
 		],
 	},
 ];
 
 const projects = [
 	{
-		name: 'Facility Reservation App',
+		name: 'Open Source Facility Reservation App',
 		description:
-			"Full stack application written with Typescript using the full power of NextJs' version 13.4 App Router. Features full use of React server components, SQL database querying with Prisma, and user authentication with NextAuth",
+			'Full stack application written with Typescript. Features  React server components, Supabase, and NextAuth',
 		tags: [
 			{
 				name: 'React',
@@ -191,7 +191,8 @@ const projects = [
 			},
 		],
 		image: facilities,
-		source_code_link: 'https://facilities.laurel.k12.mt.us',
+		source_code_link: 'https://gitub.com/biohackerellie/OpenFacilities',
+		image_link: 'https://facilities.laurel.k12.mt.us',
 	},
 	{
 		name: 'Full Stack Music App',
@@ -213,6 +214,7 @@ const projects = [
 		],
 		image: Site,
 		source_code_link: 'https://github.com/biohackerellie/music-app',
+		image_link: 'https://music.epklabs.com',
 	},
 	{
 		name: 'React-Terminal',
@@ -234,32 +236,34 @@ const projects = [
 		],
 		image: terminal,
 		source_code_link: 'https://github.com/biohackerellie/react-terminal',
+		image_link: 'https://terminal.epklabs.com',
 	},
 	{
 		name: 'Documentation Sites',
 		description:
-			"I've made several different documentation sites using React. Examples include my personal documentation as well as a site for Laurel Public Schools",
+			"I've made several different documentation sites using React and NextJS. Example link is my personal Documentation hosted on Vercel",
 		tags: [
 			{
 				name: 'React',
 				color: 'blue-text-gradient',
 			},
 			{
-				name: 'Docusaurus',
+				name: 'Next JS',
 				color: 'green-text-gradient',
 			},
 			{
-				name: 'Docker',
+				name: 'Vercel',
 				color: 'pink-text-gradient',
 			},
 		],
 		image: docs,
-		source_code_link: 'https://github.com/Laurel-Public-Schools/links',
+		source_code_link: 'https://github.com/biohackerellie/docs',
+		image_link: 'https://docs.epklabs.com',
 	},
 	{
 		name: 'Windows RDS',
 		description:
-			'I designed a custom Windows RDS solution for students to use on their chromebooks with Apache Guacamole as a custom gateway and load-balancer',
+			'I designed a custom Windows RDS solution for students to use on their chromebooks',
 		tags: [
 			{
 				name: 'Docker',
@@ -279,7 +283,8 @@ const projects = [
 			},
 		],
 		image: rds,
-		source_code_link: 'https://github.com/',
+		source_code_link:
+			'https://docs.epklabs.com/Docker-Projects/WIndows-RDS-With-Guacamole',
 	},
 	{
 		name: 'Active Directory Tools',
