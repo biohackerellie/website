@@ -37,7 +37,7 @@ dependencies:
     version: 6.16.0(react-dom@18.2.0)(react@18.2.0)
   react-tilt:
     specifier: ^1.0.2
-    version: 1.0.2(@types/react-dom@18.2.10)(@types/react@18.2.25)(react-dom@18.2.0)(react@18.2.0)
+    version: 1.0.2(@types/react-dom@18.2.12)(@types/react@18.2.25)(react-dom@18.2.0)(react@18.2.0)
   react-vertical-timeline-component:
     specifier: ^3.6.0
     version: 3.6.0(react@18.2.0)
@@ -53,8 +53,8 @@ devDependencies:
     specifier: ^18.2.22
     version: 18.2.25
   '@types/react-dom':
-    specifier: ^18.2.7
-    version: 18.2.10
+    specifier: ^18.2.12
+    version: 18.2.12
   '@vitejs/plugin-react':
     specifier: ^4.0.4
     version: 4.1.0(vite@4.4.11)
@@ -854,8 +854,8 @@ packages:
   /@types/prop-types@15.7.8:
     resolution: {integrity: sha512-kMpQpfZKSCBqltAJwskgePRaYRFukDkm1oItcAbC3gNELR20XIBcN9VRgg4+m8DKsTfkWeA4m4Imp4DDuWy7FQ==}
 
-  /@types/react-dom@18.2.10:
-    resolution: {integrity: sha512-5VEC5RgXIk1HHdyN1pHlg0cOqnxHzvPGpMMyGAP5qSaDRmyZNDaQ0kkVAkK6NYlDhP6YBID3llaXlmAS/mdgCA==}
+  /@types/react-dom@18.2.12:
+    resolution: {integrity: sha512-QWZuiA/7J/hPIGocXreCRbx7wyoeet9ooxfbSA+zbIWqyQEE7GMtRn4A37BdYyksnN+/NDnWgfxZH9UVGDw1hg==}
     dependencies:
       '@types/react': 18.2.25
 
@@ -2773,7 +2773,7 @@ packages:
       react: 18.2.0
     dev: false
 
-  /react-tilt@1.0.2(@types/react-dom@18.2.10)(@types/react@18.2.25)(react-dom@18.2.0)(react@18.2.0):
+  /react-tilt@1.0.2(@types/react-dom@18.2.12)(@types/react@18.2.25)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-21tUUsmuw5id/6NDtKqwYTG4taVnw+BoUwIG6YsgPC9GI6cx4BnBuSqgriQYAYcv3bdGNzecaBL+rvQRAm28bg==}
     peerDependencies:
       '@types/react': ^18.0.29
@@ -2782,7 +2782,7 @@ packages:
       react-dom: ^18.2.0
     dependencies:
       '@types/react': 18.2.25
-      '@types/react-dom': 18.2.10
+      '@types/react-dom': 18.2.12
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
