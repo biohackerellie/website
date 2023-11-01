@@ -10,6 +10,7 @@ import me from './Me.jpg';
 import css from './tech/css.png';
 import docker from './tech/docker.png';
 import bash from './tech/bash.png';
+import cpp from './tech/cpp.png';
 import git from './tech/git.png';
 import html from './tech/html.png';
 import javascript from './tech/javascript.png';
@@ -29,6 +30,7 @@ import docs from './docs.png';
 import rds from './rds.png';
 import app4 from './app4.png';
 import Site from './Site.png';
+import BunMailLogo from './BunMailLogo.png';
 export {
 	me,
 	bb,
@@ -37,8 +39,10 @@ export {
 	logo,
 	backend,
 	creator,
+	BunMailLogo,
 	mobile,
 	web,
+	cpp,
 	github,
 	menu,
 	close,

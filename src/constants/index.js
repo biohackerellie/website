@@ -17,6 +17,8 @@ import {
 	docker,
 	bb,
 	cpr,
+	cpp,
+	BunMailLogo,
 	laurel,
 	docs,
 	facilities,
@@ -107,8 +109,8 @@ const technologies = [
 		icon: git,
 	},
 	{
-		name: 'Ruby',
-		icon: ruby,
+		name: 'CPP',
+		icon: cpp,
 	},
 	{
 		name: 'docker',
@@ -239,52 +241,27 @@ const projects = [
 		image_link: 'https://terminal.epklabs.com',
 	},
 	{
-		name: 'Documentation Sites',
+		name: 'BunMail',
 		description:
-			"I've made several different documentation sites using React and NextJS. Example link is my personal Documentation hosted on Vercel",
-		tags: [
-			{
-				name: 'React',
-				color: 'blue-text-gradient',
-			},
-			{
-				name: 'Next JS',
-				color: 'green-text-gradient',
-			},
-			{
-				name: 'Vercel',
-				color: 'pink-text-gradient',
-			},
-		],
-		image: docs,
-		source_code_link: 'https://github.com/biohackerellie/docs',
-		image_link: 'https://docs.epklabs.com',
-	},
-	{
-		name: 'Windows RDS',
-		description:
-			'I designed a custom Windows RDS solution for students to use on their chromebooks',
+			'BunMail is a simple http server running on Bun. It allows you to send emails from any app or command line with a POST request. It is written in Typescript and uses the Bun runtime to run the server. It is available as a Docker image and can be run on any machine that supports Docker.',
 		tags: [
 			{
 				name: 'Docker',
 				color: 'blue-text-gradient',
 			},
 			{
-				name: 'Windows RDS',
+				name: 'Bun',
 				color: 'green-text-gradient',
 			},
-			{
-				name: 'Azure',
-				color: 'pink-text-gradient',
-			},
+
 			{
 				name: 'SQL',
 				color: 'purple-text-gradient',
 			},
 		],
-		image: rds,
-		source_code_link:
-			'https://docs.epklabs.com/Docker-Projects/WIndows-RDS-With-Guacamole',
+		image: BunMailLogo,
+		source_code_link: 'https://github.com/biohackerellie/Bunmail',
+		image_link: 'https://docs.epklabs.com/BunMail',
 	},
 	{
 		name: 'Active Directory Tools',
