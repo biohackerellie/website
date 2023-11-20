@@ -65,8 +65,8 @@ devDependencies:
     specifier: ^0.13.0
     version: 0.13.0
   npm:
-    specifier: ^10.2.2
-    version: 10.2.2
+    specifier: ^10.2.4
+    version: 10.2.4
   postcss:
     specifier: ^8.4.24
     version: 8.4.31
@@ -2379,8 +2379,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /npm@10.2.2:
-    resolution: {integrity: sha512-VSP/rh88wBQ+b7bz0NOdZQBQCuWLI/etpWfgUWDmNaMy0MuD1xJBMofEzuFojNpJANVaJCkN5U7KgfPdR2V1fg==}
+  /npm@10.2.4:
+    resolution: {integrity: sha512-umEuYneVEYO9KoEEI8n2sSGmNQeqco/3BSeacRlqIkCzw4E7XGtYSWMeJobxzr6hZ2n9cM+u5TsMTcC5bAgoWA==}
     engines: {node: ^18.17.0 || >=20.5.0}
     hasBin: true
     dev: true
