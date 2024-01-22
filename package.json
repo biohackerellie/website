@@ -23,7 +23,7 @@
 		"react-tilt": "^1.0.2",
 		"react-vertical-timeline-component": "^3.6.0",
 		"taos": "^1.0.3",
-		"three": "^0.158.0"
+		"three": "^0.160.1"
 	},
 	"devDependencies": {
 		"@types/react": "^18.2.47",
